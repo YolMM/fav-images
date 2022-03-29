@@ -2,6 +2,11 @@
   "name": "api",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.ts",
+    "seed": "nodemon src/scripts/seed.ts"
+  },
   "license": "MIT",
   "dependencies": {
     "@types/pino": "^7.0.5",
