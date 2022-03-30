@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "@types/pino": "^7.0.5",
-    "axios": "^0.26.1",
     "dotenv": "^16.0.0",
     "fastify": "^3.27.4",
     "fastify-cors": "^6.0.3",
