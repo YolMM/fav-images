@@ -102,11 +102,11 @@ It is a monorepo and its structure is:
 
     | Front      | Api          | All           |
     | ---------- | -------------| --------------|
-    | parcel     | dotenv       | eslint        |
-    | react      | fastify      | typescript    |
-    | react-dom  | fastify-cors | yarn          |
-    |            | mongoose     |               |
-    |            | nodemon      |               |
+    | axios      | dotenv       | eslint        |
+    | parcel     | fastify      | typescript    |
+    | react      | fastify-cors | yarn          |
+    | react-dom  | mongoose     |               |
+    | redux      | nodemon      |               |
     |            | pino         |               |
     |            | pino-pretty  |               |
     |            | ts-node      |               |
@@ -116,3 +116,5 @@ It is a monorepo and its structure is:
 - [ESLint](https://eslint.org/docs/user-guide/getting-started)
 - Mongoose [docs](https://mongoosejs.com/docs/)
 - [React](https://es.reactjs.org/)
+- [React-dom](https://es.reactjs.org/docs/react-dom.html#gatsby-focus-wrapper)
+- [Redux](https://es.redux.js.org/)
