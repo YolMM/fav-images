@@ -33,7 +33,7 @@ yarn init -y
 #Install dependencies:
 yarn install
 
-#To execute the project you need to open mongoDB and use next commands in a window for the api 
+#To execute the project, define a port and use next commands in a window for the api 
 yarn run seed
 yarn run dev
 #Once everything is loaded in the DB, open a new window for the front and use next command:
