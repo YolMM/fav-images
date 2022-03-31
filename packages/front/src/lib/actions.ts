@@ -48,7 +48,7 @@ export const updateAnImage = (id: string, image: object) => {
   console.log('Updating image on server...');
   return async (dispatch: any) => {
     const saveUpdatedImg = await updateImages(id, image);
-    dispatch(updateImages(saveUpdatedImg, refreshServerImages));
+    dispatch(updateImages(id, saveUpdatedImg));
   };
 };
 
