@@ -26,7 +26,7 @@ export const mainRouter: FastifyPluginAsync = async (app) => {
     return { status: 'delete' };
   });
   // Update an image
-  app.post('/:id', async (request: Myrequest) => {
+  app.put('/:id', async (request: Myrequest) => {
     const { id } = request.params;
     const image = await Images.findOneAndUpdate({ _id: id }, request.body, {
       new: true,

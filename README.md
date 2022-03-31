@@ -65,6 +65,7 @@ It is a monorepo and its structure is:
     |    └── front/
     |         ├── src/
     |         |    ├── components/
+    |         |    ├── lib/
     |         |    ├── App.tsx
     │         |    └── index.tsx
     |         ├── index.html
@@ -100,16 +101,16 @@ It is a monorepo and its structure is:
 
 ##  4. <a name='Packagesanddependencies'></a> Packages and dependencies
 
-    | Front      | Api          | All           |
-    | ---------- | -------------| --------------|
-    | axios      | dotenv       | eslint        |
-    | parcel     | fastify      | typescript    |
-    | react      | fastify-cors | yarn          |
-    | react-dom  | mongoose     |               |
-    | redux      | nodemon      |               |
-    |            | pino         |               |
-    |            | pino-pretty  |               |
-    |            | ts-node      |               |
+    | Front             | Api          | All           |
+    | ------------------| -------------| --------------|
+    | axios             | dotenv       | eslint        |
+    | parcel            | fastify      | typescript    |
+    | react             | fastify-cors | yarn          |
+    | react-dom         | mongoose     |               |
+    | react-hook-form   | nodemon      |               |
+    | redux             | pino         |               |
+    | styled-components | pino-pretty  |               |
+    |                   | ts-node      |               |
 
 ##  5. <a name='Documentation'></a> Documentation
 
@@ -117,4 +118,5 @@ It is a monorepo and its structure is:
 - Mongoose [docs](https://mongoosejs.com/docs/)
 - [React](https://es.reactjs.org/)
 - [React-dom](https://es.reactjs.org/docs/react-dom.html#gatsby-focus-wrapper)
+- [React-hook-form](https://react-hook-form.com/)
 - [Redux](https://es.redux.js.org/)
