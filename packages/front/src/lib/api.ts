@@ -9,8 +9,8 @@ export const getImages = async () => {
   return res.data;
 };
 
-export const addImages = async () => {
-  const res = await api.post('/');
+export const addImages = async (data: object) => {
+  const res = await api.post('/', data);
   return res.data;
 };
 
@@ -19,7 +19,7 @@ export const deleteImages = async (id: string) => {
   return res.data;
 };
 
-export const editImages = async (id: string) => {
-  const res = await api.post(`/${id}`);
+export const editImages = async (id: string, data: object) => {
+  const res = await api.put(`/${id}`, data);
   return res.data;
 };
