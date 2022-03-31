@@ -39,7 +39,6 @@ export const saveOnServer = (image: object) => {
 // THUNK: request API images, dispatch one addImgs action for each image recived by the API
 export const refreshServerImages = () => async (dispatch: any) => {
   const imgs = await getImages();
-  console.log('imgs', imgs);
   imgs.forEach((imag: object) => dispatch(addImgs(imag)));
 };
 
