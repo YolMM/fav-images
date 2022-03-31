@@ -19,7 +19,7 @@ export const deleteImages = async (id: string) => {
   return res.data;
 };
 
-export const editImages = async (id: string, data: object) => {
+export const updateImages = async (id: string, data: object) => {
   const res = await api.put(`/${id}`, data);
   return res.data;
 };

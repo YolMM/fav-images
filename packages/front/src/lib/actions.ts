@@ -1,7 +1,7 @@
 import {
   addImages,
   deleteImages,
-  editImages,
+  updateImages,
   getImages,
 } from './api';
 
@@ -16,11 +16,11 @@ export const addImgs = (images: object) => {
   };
 };
 
-// ACTION: Edit an image
-export const editImgs = (images: object) => {
+// ACTION: Update an image
+export const updateImgs = (images: object) => {
   console.log('Updating image');
   return {
-    type: 'EDITIMAGE',
+    type: 'UPDATEIMAGE',
     images,
   };
 };
@@ -43,12 +43,12 @@ export const refreshServerImages = () => async (dispatch: any) => {
   imgs.forEach((imag: object) => dispatch(addImgs(imag)));
 };
 
-// THUNK: edit images on server via API call and refresh local visualization
-export const editAnImage = (id: string, image: object) => {
+// THUNK: update images on server via API call
+export const updateAnImage = (id: string, image: object) => {
   console.log('Updating image on server...');
   return async (dispatch: any) => {
-    const saveEditedImg = await editImages(id, image);
-    dispatch(editImages(saveEditedImg, refreshServerImages));
+    const saveUpdatedImg = await updateImages(id, image);
+    dispatch(updateImages(saveUpdatedImg, refreshServerImages));
   };
 };
 

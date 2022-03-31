@@ -17,7 +17,7 @@ function routReducer(state = initState, action: any) {
         ...state,
         images: [...state.images, action.images],
       };
-    case 'EDITIMAGE':
+    case 'UPDATEIMAGE':
       return {
         ...state,
         images: [...state.images, action.images],
